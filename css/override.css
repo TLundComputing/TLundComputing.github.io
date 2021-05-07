@@ -1,0 +1,24 @@
+.tc-secondary {
+    background-color: #90A4AE;
+    color: white;
+}
+
+.tc-active{
+    border-bottom: solid 4pt #FFD740 !important;
+}
+
+.w3-button:hover {
+    border-bottom: solid 4pt #FFD740 !important;
+    background-color: #455A64 !important;
+    color: white !important;
+}
+
+section {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.material-icons {
+    font-size: 57pt;
+}
