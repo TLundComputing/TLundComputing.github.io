@@ -1,6 +1,6 @@
 .tc-secondary {
     background-color: #90A4AE;
-    color: white;
+    color: black;
 }
 
 .tc-active{
@@ -17,6 +17,7 @@ section {
     max-width: 95%;
     margin: auto;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 .material-icons {
