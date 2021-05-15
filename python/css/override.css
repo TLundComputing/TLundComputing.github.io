@@ -1,0 +1,34 @@
+.tc-secondary {
+    background-color: #90A4AE !important;
+    color: black;
+}
+
+.tc-active{
+    border-bottom: solid 4pt #FFD740 !important;
+}
+
+.w3-bar-item:hover {
+    border-bottom: solid 4pt #FFD740 !important;
+    background-color: #455A64 !important;
+    color: white !important;
+}
+
+.tc-accent {
+    background-color: #FFD740 !important;
+    color: black !important;
+}
+
+.tc-accent:hover {
+    background-color: #FFAB00 !important;
+    color: black !important;
+}
+
+.w3-card {
+    padding: 10px;
+}
+
+
+
+.material-icons {
+    font-size: 57pt;
+}
