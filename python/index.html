@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="./css/override.css">
-        <title>TLundComputing Home</title>
+        <title>TLundComputing Python Home</title>
     </head>
     <body>
         <header>
@@ -32,9 +32,9 @@
             </div>
         </header>
         <section>
-            <div class="w3-sidebar w3-bar-block w3-collapse" style="border-right:1pt solid black;width:20%;" id="mySidebar">
+            <div class="w3-sidebar w3-bar-block w3-collapse" style="width:20%;" id="mySidebar">
                 <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-                <a href="./index.html" class="w3-bar-item w3-button">Programming Constructs</a>
+                <a href="./index.html" class="w3-bar-item w3-button tc-active">Python Home</a>
                 <a href="./basics.html" class="w3-bar-item w3-button">Printing, Variables, and Inputs</a>
                 <a href="./arithmetic.html" class="w3-bar-item w3-button">Arithmetic</a>
                 <a href="./constructs.html" class="w3-bar-item w3-button">Programming Constructs</a>
@@ -45,7 +45,42 @@
                 <a href="./oop.html" class="w3-bar-item w3-button">Object Orientation</a>
             </div>
             <div class="w3-main w3-container" style="margin-left: 20%;">
-                <h2>This is a test</h2>
+                <h2 class="w3-center">Getting Started</h2>
+                <div class="w3-row-padding">
+                    <div class="w3-col l12 m12 s12">
+                        <h3 class="w3-center">How to use this tutorial</h3>
+                        <p>
+                            This tutorial is split into sections on the left. If you are viewing on a small screen or a mobile device, then please click the "burger" icon at the top of the screen to show the sub-menu. This tutorial is going to go over some basic skills that cover the OCR GCSE and A-Level specification. There are other indepth tutorials out there and I recommend that you find one that is right for you. Code examples will be shown to the side of any descriptive text as shown below (If you are on a small or mobile device it will stack underneath).
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col l6 m6">
+                        <p>
+                            Python is a very versatile language that has been used in many different applications. Even though Python is a general purpose language, it can be used in embedded systems that perform a single purpose.
+                        </p>
+                        <p>
+                            Python is very easy to install but you can use a web environment if you do not want to install the language on your computer.
+                        </p>
+                        <p class="w3-center">
+                            <a href="https://www.python.org/" class="w3-button tc-accent">Python Website</a><br><br>
+                            <a href="https://www.trinket.io/python" class="w3-button tc-accent">Python Web Environment</a>
+                        </p>
+                    </div>
+                    <div class="w3-col l6 m6">
+                        <div class="w3-card">
+                            <h3 class="w3-center">Code Example</h3>
+                            <div class="w3-code pythonHigh notranslate">
+                                print("Welcome to Python")<br>
+                                answer = input("You ready to learn? ")<br>
+                                if answer == "yes":<br>
+                                &nbsp;&nbsp;print("Great!")<br>
+                                else:<br>
+                                &nbsp;&nbsp;print("I'm sure you will soon")
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="w3-container w3-bottom w3-blue-grey w3-center">
@@ -54,7 +89,9 @@
             </p>
         </footer>
     </body>
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
     <script>
+        w3CodeColor();
         function w3_open() {
             document.getElementById("mySidebar").style.display = "block";
         }
