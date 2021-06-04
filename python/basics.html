@@ -11,7 +11,7 @@
         <title>TLundComputing Home</title>
     </head>
     <body>
-        <header>
+        <header class="w3-top">
             <div class="w3-container w3-blue-grey">
                 <div class="w3-row">
                     <div class="w3-col s1 m1 l1">
@@ -45,7 +45,63 @@
                 <a href="./oop.html" class="w3-bar-item w3-button">Object Orientation</a>
             </div>
             <div class="w3-main w3-container" style="margin-left: 20%;">
-                <h2>This is a test</h2>
+                <h1 class="w3-center">Printing, Variables, and Inputs</h1>
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 l6">
+                        <h2 class="w3-center">Printing</h2>
+                        <p>Printing is a very simple but useful feature of any programming language. Python makes this really easy for new and experenced programmers. Have a look at the example to the right (or below on mobile device).</p>
+                    </div>
+                    <div class="w3-col m6 l6">
+                        <h2 class="w3-center">Printing Code Example</h2>
+                        <div class="w3-code pythonHigh notranslate">
+                            print("Hello World")<br>
+                            print("This is super easy to do!")
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 l6">
+                        <h2 class="w3-center">Variables</h2>
+                        <p>
+                            Variables are used to store information while a program is running.
+                        </p>
+                        <p>
+                            Variables can be seen a bit like a cardboard box that you assign a label. for example in the code snippet to the right (or below on mobile), you can see that there is a variable that is called name, you can see that I have changed the value of name a couple of times. Output is shown via the hash character (&#0035;), when the program is run you will see it differently.
+                        </p>
+                        <p>
+                            You can use these to be able to temporaily store data that is important to your program. What variabels would we use in a quiz game?
+                        </p>
+                    </div>
+                    <div class="w3-col m6 l6">
+                        <h2>Variables Code Example</h2>
+                        <div class="w3-code pythonHigh notranslate">
+                            name = "Tom Lund"<br>
+                            print("Your name is", name)<br>
+                            &#0035;Your name is Tom Lund<br><br>
+                            name = "Mickey Mouse"<br>
+                            print("Your name is", name)<br>
+                            &#0035;Your name is Mickey Mouse
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 l6">
+                        <h2 class="w3-center">Inputs</h2>
+                        <p>
+                            Inputting data makes your program more flexible and less static. To do this you need to use variables like in the section earlier, the keyword input is then used to request information from the person using your program (user). We shall say our user will enter Donald Duck, again I shall use console output with the &#0035; symbol.
+                        </p>
+                    </div>
+                    <div class="w3-col m6 l6">
+                        <h2 class="w3-center">Input Code Example</h2>
+                        <div class="w3-code pythonHigh notranslate">
+                            name = input("Enter your name: ")<br>
+                            print("Your name is", name)<br>
+                            &#0035;Your name is Donald Duck
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="w3-container w3-bottom w3-blue-grey w3-center">
@@ -54,7 +110,9 @@
             </p>
         </footer>
     </body>
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
     <script>
+        w3CodeColor();
         function w3_open() {
             document.getElementById("mySidebar").style.display = "block";
         }
