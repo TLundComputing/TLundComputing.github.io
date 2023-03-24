@@ -3,8 +3,13 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>How to do HTML</title>
+		<title>How to do CSS</title>
 		<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+		<style>
+			section {
+				margin-bottom: 300px;
+			}
+		</style>
 		<script src="https://kit.fontawesome.com/e140a684da.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -19,9 +24,94 @@
 			<a href="js.html" class="w3-bar-item w3-button w3-mobile w3-hover-yellow">JavaScript</a>
 		</div>
 		<section class="w3-container">
-			<h1 class="w3-center">Under Construction, Come Back Soon</h1>
-			<div class="w3-center">
-				<i class='fas fa-sync' style='font-size:48px;'></i>
+			<div class="w3-row-padding">
+				<div class="w3-col l12 m12 s12">
+					<h2 class="w3-center">Introduction to CSS</h2>
+					<p>CSS stands for cascading stylesheet. You use this to add style to your website. To do this you can do it inline or in a seperate CSS file using the &lt;link&gt; tag. For the A-Level qualification you need to know the different identifiers (covered later in this document) and the following properties that you can change (click on the properties to see how they work):</p>
+					<h2>Structure of a CSS statement</h2>
+					<p>With CSS you need to use a selector then change that element with different attributes that are in curly brackets. Attributes and properties are seperated with a colon and ended with a semi colon.</p>
+					<div class="w3-code cssHigh notranslate">
+						body {<br>
+							&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+							&nbsp;&nbsp;font-size: 12pt;<br>
+						}
+					</div>
+					<p>The above changes the font of any text within the body tag to arial with a font size of 12.</p>
+					<p>Selectors are also used. to selefct what you want to change the style of. If you want to select all the instances of a tag, then you just use the tag name. If you want a specific element then you can use an ID, a selector with an ID uses a # infront of the selector name. An ID can only be assigned to one alement of your html file. If you want some elements selected but not all then you can select a class, classes can be added to any element and reused through the html file. Class selectors use a . at the beginning of the name.</p>
+					<button onclick="accordian('bc')" class="w3-btn w3-block w3-left-align w3-yellow">background-color</button>
+					<div id="bc" class="w3-container w3-hide">
+						<div class="w3-row-padding">
+							<div class="w3-col l6 m6">
+								<h3 class="w3-center">Changing the background colour</h3>
+								<p>The background colour can be changed by stating the name of the element, the class of the element, or the id of the element. To give a background colour you can use hex values in the for red blue green, or you can state a names colour. Look at the code to the right for an example of changing the background colour of the body tag.</p>
+							</div>
+							<div class="w3-col l6 m6">
+								<div class="w3-code cssHigh notranslate">
+									body {<br>
+									&nbsp;&nbsp;backround-color: #428af5;<br>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+					<button onclick="accordian('borders')" class="w3-btn w3-block w3-left-align w3-yellow">borders</button>
+					<div id="borders" class="w3-container w3-hide">
+						<div class="w3-row-padding">
+							<div class="w3-col l6 m6">
+								<h3 class="w3-center">Borders</h3>
+								<p>Borders go around elelments with solid, dashed, or dotted lines. You can change the the colour and thickness of the borders for each element. you can do this seperatly or you can do it all at once. Look at the example and have a look at how the code changes for giving two images the same border.</p>
+							</div>
+							<div class="w3-col l6 m6">
+								<div class="w3-code cssHigh notranslate">
+									#potrait {<br>
+									&nbsp;&nbsp;border: 5px solid red;<br>
+									}<br><br><br>
+									#landscape {<br>
+									&nbsp;&nbsp;border-style: solid;<br>
+									&nbsp;&nbsp;border-width: 5px;<br>
+									&nbsp;&nbsp;border-color: red;<br>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+					<button onclick="accordian('font')" class="w3-btn w3-block w3-left-align w3-yellow">fonts</button>
+					<div id="font" class="w3-container w3-hide">
+						<div class="w3-row-padding">
+							<div class="w3-col l6 m6">
+								<h3 class="w3-center">Font</h3>
+								<p>Changing the font comes in a couple of steps looking at the font family and the font size. You need to use a selector to choose what text you want to change. The example shows how to change the font to comic sans for paragraphs.</p>
+							</div>
+							<div class="w3-col l6 m6">
+								<div class="w3-code cssHigh notranslate">
+									p {<br>
+									&nbsp;&nbsp;font-family: "comic sans";<br>
+									&nbsp;&nbsp;font-size: 12pt;<br>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+					<button onclick="accordian('dimentions')" class="w3-btn w3-block w3-left-align w3-yellow">dimentions</button>
+					<div id="dimentions" class="w3-container w3-hide">
+						<div class="w3-row-padding">
+							<div class="w3-col l6 m6">
+								<h3 class="w3-center">Dimentions</h3>
+								<p>You can change the dimentions of different divisions, images, and other elements. To do this you add a width and a height attribute within your css. Look at the square below. This is a red square with the id red. I have used CSS to make it 100px by 100px</p>
+								<div id="red" style="background-color:red;width:100px;height:100px;"></div>
+							</div>
+							<div class="w3-col l6 m6">
+								<div class="w3-code cssHigh notranslate">
+									#red {<br>
+									&nbsp;&nbsp;width: 100px;<br>
+									&nbsp;&nbsp;height: 100px;<br>
+									&nbsp;&nbsp;background-color: red;<br>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<footer class="w3-container w3-center w3-amber w3-bottom">
@@ -32,5 +122,14 @@
 	<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
 	<script>
 		w3CodeColor();
+		function accordian(id) {
+  			var x = document.getElementById(id);
+  			if (x.className.indexOf("w3-show") == -1) {
+    				x.className += " w3-show";
+  			} else { 
+    				x.className = x.className.replace(" w3-show", "");
+  			}
+		}
 	</script>
+		
 </html>
