@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Scratch</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     </head>
     <body>
@@ -12,7 +13,7 @@
             <div class="hero-body">
                 <h1 class="title">Scratch Project Ideas</h1>
                 <p class="subtitle">These will get the ninjas scratching their heads</p>
-                <a href="index.html">Back to the Dojo</a>
+                <a class="is-link" href="index.html"><span class="icon-text"><span class="icon"><i class="material-icons">arrow_back</i><span>Back</span></span></span></a>
             </div>
         </section>
         <div class="columns is-centered mt-5">
@@ -29,13 +30,29 @@
 		</div>
         <!--The rest goes here-->
         <div class="content">
-            <div class="tabs is-boxed">
+            <div class="tabs is-centered is-boxed">
                 <ul>
-                    <li class="is-active"><a>Interactive Birthday Card</a></li>
-                    <li><a>Space Invaders</a></li>
-                    <li><a>Racing Game</a></li>
-                    <li><a>Help</a></li>
+                    <li id="tab1" onClick="changeTab(event, 'birthday', 'tab1')" class="is-active tablink"><a>Interactive Birthday Card</a></li>
+                    <li id="tab2" onClick="changeTab(event, 'invaders', 'tab2')" class="tablink"><a>Space Invaders</a></li>
+                    <li id="tab3" onClick="changeTab(event, 'racing', 'tab3')" class="tablink"><a>Racing Game</a></li>
+                    <li id="tab4" onClick="changeTab(event, 'help', 'tab4')" class="tablink"><a>Help</a></li>
                 </ul>
+            </div>
+            <div class="container tabcontent" id="birthday" style="display:block">
+				<h1 class="title">A birthday Card</h1>
+				<p>Create a birthday card for a relative that has intractive elements.</p>
+            </div>
+            <div class="container tabcontent" id="invaders" style="display:none">
+				<h1 class="title">Space Invaders</h1>
+				<p>Create a birthday card for a relative that has intractive elements.</p>
+            </div>
+            <div class="container tabcontent" id="racing" style="display:none">
+				<h1 class="title">Racing Game</h1>
+				<p>Create a birthday card for a relative that has intractive elements.</p>
+            </div>
+            <div class="container tabcontent" id="help" style="display:none">
+				<h1 class="title">Help</h1>
+				<p>Create a birthday card for a relative that has intractive elements.</p>
             </div>
         </div>
         <!--End of the section-->
@@ -49,4 +66,5 @@
 			</a>
 		</section>
     </body>
+    <script src="./scripts/behaviour.js"></script>
 </html>
