@@ -23,11 +23,68 @@
 					</div>
 					<div class="message-body">
 						<p>Use the accordian to find a project that inspires you. Remember to use the help box if you need it!</p>
+						<p>The follwoing resources were provided by OCR, there small print is included here:</p>
+						<p>OCR’s resources are provided to support the delivery of OCR qualifications, but in no way constitute an endorsed teaching method that is required by OCR. Whilst every effort is made to ensure the accuracy of the content, OCR cannot be held responsible for any errors or omissions within these resources. We update our resources on a regular basis, so please check the OCR website to ensure you have the most up to date version.</p>
+						<p>This resource may be freely copied and distributed, as long as the OCR logo and this small print remain intact and OCR is acknowledged as the originator of this work.</p>
 					</div>
 				</article>
 			</div>
 		</div>
         <!--The rest goes here-->
+	<div class="content">
+            <div class="tabs is-centered is-boxed">
+                <ul>
+                    <li id="tab1" onClick="changeTab(event, 'arithmetic', 'tab1')" class="is-active tablink"><a>Arithmetic Test</a></li>
+                    <li id="tab2" onClick="changeTab(event, 'fizzbuzz', 'tab2')" class="tablink"><a>Fizz Buzz</a></li>
+                    <li id="tab3" onClick="changeTab(event, 'speed', 'tab3')" class="tablink"><a>Speed Tracker</a></li>
+                    <li id="tab4" onClick="changeTab(event, 'help', 'tab4')" class="tablink"><a>Help</a></li>
+                </ul>
+            </div>
+            <div class="container tabcontent" id="arithmetic" style="display:block">
+				<h1 class="title is-1 has-text-weight-normal">Arithmetic Test</h1>
+				<p>A primary school teacher wants a computer program to test the basic arithmetic skills of her students. Generate random questions (2 numbers only) consisting of addition, subtraction, multiplication and division.</p>
+				<p>The system should ask the student’s name and then ask ten questions. The program should feed back if the answers are correct or not, and then generate a final score at the end.</p>
+				<h2 class="title is-2 has-text-weight-normal">Challenges</h2>
+				<ol>
+					<li>Extend your program so that it stores the results somewhere. The teacher has three classes, so you need to enable the program to distinguish between them</li>
+					<li>The teacher wants to be able to log student performance in these tests. The teacher would like the program to store the last three scores for each student and to be able to output the results in alphabetical order with the student’s highest score first out of the three.</li>
+				</ol>
+            </div>
+            <div class="container tabcontent" id="fizzbuzz" style="display:none">
+				<h1 class="title is-1 has-text-weight-normal">Fizz Buzz</h1>
+				<p>Create a program that replicates the famous game Fizz Buzz. The program will take an input, e.g. 20, and then print out the list of Fizz Buzz up to and including that number, where:</p>
+				<ul>
+					<li>Any multiple of 3 is replaced by the word "Fizz"</li>
+					<li>Any multiple of 5 is replaced by the word "Buzz"</li>
+					<li>Any multiple of both 3 and 5 is replaced by the word "FizzBuzz</li>
+				</ul>
+				<h2 class="title is-2 has-text-weight-normal">Challenges</h2>
+				<ol>
+					<li>Replace any prime number with the word ‘OOPS!’</li>
+					<li>Allow the user to enter the base numbers that they want to replace words with. E.g. 2 and 3, which would mean:</li>
+					<ul>
+						<li>Any multiple of 2 is replaced by the word "Fizz"</li>
+						<li>Any multiple of 3 is replaced by the word "Buzz"</li>
+						<li>Any multiple of both 2 and 3 is replaced by the word "FizzBuzz</li>
+					</ul>
+				</ol>
+            </div>
+            <div class="container tabcontent" id="speed" style="display:none">
+				<h1 class="title is-1 has-text-weight-normal">Speed Tracker</h1>
+				<p>Create a program that takes a time for a car going past a speed camera, the time going past the next one and the distance between them to calculate the average speed for the car in mph. The cameras are one mile apart.</p>
+				<h2 class="title is-2 has-text-weight-normal">Challenges</h2>
+				<ol>
+					<li>Speed cameras know the timings of each car going past, through number plate recognition. Valid number plates are two letters, two numbers and three letters afterwards, for example XX77 787. Produce a part of the program that checks whether a number plate matches the given pattern. Tell the user either way.</li>
+					<li>Create a program for creating a file of details for vehicles exceeding the speed limit set for a section of road. You will need to create a suitable file with test data, including
+randomised number plates and times. You will then use the code you’ve already written to process this list to determine who is breaking the speed limit (70mph) and who has invalid number plates.</li>
+				</ol>
+            </div>
+            <div class="container tabcontent" id="help" style="display:none">
+				<h1 class="title is-1 has-text-weight-normal">Help</h1>
+				<p>Create a birthday card for a relative that has intractive elements.</p>
+            </div>
+        </div>
+	<!--End of Section -->
         <section class="section has-text-centered">
 			<a href="https://bulma.io" target="_blank">
 			  <img
@@ -38,4 +95,5 @@
 			</a>
 		</section>
     </body>
+    <script src="scripts/behaviour.js"></script>
 </html>
