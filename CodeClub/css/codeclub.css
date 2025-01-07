@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body {
+  font-family: "Lexend", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lexend", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.primary {
+  background-color: #41b653;
+  color: #37384d;
+}
+
+.secondary {
+  background-color: #da315f;
+  color: white;
+}
+
+.accent {
+  background-color: #f8f294;
+  color: black;
+}
+
+.w3-panel {
+  padding-bottom: 15px;
+  border-radius: 10px;
+}

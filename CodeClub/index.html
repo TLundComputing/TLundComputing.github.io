@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CodeClub @ Bootham</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/codeclub.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="w3-container primary" style="padding-bottom:15px;">
+      <h1 id="mainTitle" class="w3-center">Code Club @ Bootham</h1>
+      <select id="stylePicker" class="w3-select">
+        <option value="cc">Code Club</option>
+        <option value="cd">CoderDojo</option>
+      </select>
+    </header>
+    <section class="w3-container" style="padding-bottom:100px;">
+      <div class="w3-row-padding">
+        <div class="w3-col l12">
+          <h2>Activities</h2>
+          <p>Code Club is a relaxed environment where you can learn new skills and make something you are proud of. Each week you can either:</p>
+          <ol class="w3-ol">
+            <li>Use the pathways from the Raspberry Pi Foundation to learn something new</li>
+            <li>Use the accordian to see some themed activities and challenges</li>
+            <li>Create something brand new to your own specification</li>
+          </ol>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-col l4">
+          <div class="w3-panel w3-center secondary">
+            <h3>Getting Started With Scratch</h3>
+            <img style="max-width: 33%;" src="./img/scratch.png" alt="Scratch Logo" title="designed by FreePik from Flaticon"><br><br>
+            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/scratch" target="_blank">Go to Scratch Pathway</a>
+          </div>
+        </div>
+        <div class="w3-col l4">
+          <div class="w3-panel w3-center secondary">
+            <h3>Getting Started With Python</h3>
+            <img style="max-width: 33%;" src="./img/python.png" alt="Python Logo" title="designed by FreePik from Flaticon"><br><br>
+            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/python" target="_blank">Go to Python Pathway</a>
+          </div>
+        </div>
+        <div class="w3-col l4">
+          <div class="w3-panel w3-center secondary">
+            <h3>Getting Started With Web Design</h3>
+            <img style="max-width: 33%;" src="./img/html-5.png" alt="HTML Logo" title="designed by FreePik from Flaticon"><br><br>
+            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/html_and_css" target="_blank">Go to Web Design Pathway</a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-col l6">
+          <div class="w3-panel w3-center secondary">
+            <h3>Getting Started With micro:bit</h3>
+            <img style="max-width: 33%;" src="./img/pcb-board.png" alt="Scratch Logo" title="designed by madness from Flaticon"><br><br>
+            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/microbit" target="_blank">Go to micro:bit Pathway</a>
+          </div>
+        </div>
+        <div class="w3-col l6">
+          <div class="w3-panel w3-center secondary">
+            <h3>Getting Started With AI</h3>
+            <img style="max-width: 33%;" src="./img/artificial-intelligence.png" alt="Scratch Logo" title="designed by FreePik from Flaticon"><br><br>
+            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/artificial_intelligence" target="_blank">Go to AI Pathway</a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-col l12">
+          <!-- Accordian goes here -->
+          <button id="week1Btn" class="w3-btn w3-block w3-left-align secondary">Week 1</button>
+          <div id="week1Content" class="w3-container w3-hide">
+            <h4>Blast off with Astro Pi!</h4>
+            <p>Today we are going to look at Astro Pi and their two respective missions that you can enter!</p>
+            <p>If you are a beginner then it is recommended that you use Misson Zero, if you are advanced then have a go at Mission Space Lab</p>
+            <p>To get to the Astro Pi Page click the button below</p>
+            <a href="https://astro-pi.org/#chooseyourmission" class="w3-btn secondary" target="_blank">Blast off!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w3-container w3-center w3-bottom primary">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://tlundcomputing.github.io/codeclub">Coding Activities</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://tlundcomputing.github.io/">TLundComputing</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
