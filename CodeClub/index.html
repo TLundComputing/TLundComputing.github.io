@@ -4,18 +4,19 @@
     <title>CodeClub @ Bootham</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/codeclub.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
-    <header class="w3-container primary" style="padding-bottom:15px;">
+    <header class="w3-container primary">
       <h1 id="mainTitle" class="w3-center">Code Club @ Bootham</h1>
       <select id="stylePicker" class="w3-select">
         <option value="cc">Code Club</option>
         <option value="cd">CoderDojo</option>
       </select>
     </header>
-    <section class="w3-container" style="padding-bottom:100px;">
+    <section class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col l12">
           <h2>Activities</h2>
@@ -70,12 +71,34 @@
         <div class="w3-col l12">
           <!-- Accordian goes here -->
           <button id="week1Btn" class="w3-btn w3-block w3-left-align secondary">Week 1</button>
-          <div id="week1Content" class="w3-container w3-hide">
+          <div id="week1Content" class="w3-container w3-hide accord-content">
             <h4>Blast off with Astro Pi!</h4>
             <p>Today we are going to look at Astro Pi and their two respective missions that you can enter!</p>
             <p>If you are a beginner then it is recommended that you use Misson Zero, if you are advanced then have a go at Mission Space Lab</p>
             <p>To get to the Astro Pi Page click the button below</p>
-            <a href="https://astro-pi.org/#chooseyourmission" class="w3-btn secondary" target="_blank">Blast off!</a>
+            <a href="https://astro-pi.org/#chooseyourmission" class="w3-btn accent" target="_blank">Blast off!</a>
+          </div>
+          <button id="week2Btn" class="w3-btn w3-block w3-left-align secondary">Week 2</button>
+          <div id="week2Content" class="w3-container w3-hide accord-content">
+            <h4>Communication Week</h4>
+            <div class="w3-row-padding">
+              <div class="w3-col l4">
+                <h5 class="w3-center">Scratch</h5>
+                <p>Use the template on the Bootham Code Club Website to create a project that asks how users are feeling and responds appropriately to them</p>
+                <a href="https://scratch.mit.edu/projects/1119459900" target="_blank" class="w3-button accent">Scratch Starter Project</a>
+              </div>
+              <div class="w3-col l4">
+                <h5 class="w3-center">BBC micro:bit</h5>
+                <p>Use the BBC micro:bit to input letters to make a message. When the micro:bit shakes the speaker should play the message in morse code</p>
+                <p>Use the A and B buttons to cycle through the alphabet, confirm your selection with A+B</p>
+                <a href="https://makecode.microbit.org/" target="_blank" class="w3-button accent">MakeCode Editor</a>
+              </div>
+              <div class="w3-col l4">
+                <h5 class="w3-center">Python</h5>
+                <p>Use python to send secret message using a caesar cipher. Use the internet or w3schools to help with this task. Lists and Dictionaries will be helpful!</p>
+                <a href="https://editor.raspberrypi.org/en/projects/blank-python-starter" target="_blank" class="w3-button accent">Python Editor</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

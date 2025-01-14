@@ -13,4 +13,8 @@ $(document).ready(function() {
     $("#week1Content").toggleClass("w3-show");
     $("#week1Btn").toggleClass("accent");
   });
+  $("#week2Btn").click(function() {
+    $("#week2Content").toggleClass("w3-show");
+    $("#week2Btn").toggleClass("accent");
+  });
 });
