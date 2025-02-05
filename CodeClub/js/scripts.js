@@ -25,4 +25,8 @@ $(document).ready(function() {
     $("#week4Content").toggleClass("w3-show");
     $("#week4Btn").toggleClass("accent");
   });
+  $("#week5Btn").click(function() {
+    $("#week5Content").toggleClass("w3-show");
+    $("#week5Btn").toggleClass("accent");
+  });
 });
