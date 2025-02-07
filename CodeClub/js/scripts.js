@@ -29,4 +29,7 @@ $(document).ready(function() {
     $("#week5Content").toggleClass("w3-show");
     $("#week5Btn").toggleClass("accent");
   });
+  $("#week6Btn").click(function() {
+	alert("No peeking into Week 6. It is too early!");  
+  });
 });
