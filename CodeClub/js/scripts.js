@@ -37,4 +37,12 @@ $(document).ready(function() {
     $("#week7Content").toggleClass("w3-show");
     $("#week7Btn").toggleClass("accent"); 
   });
+    $("#week8Btn").click(function() {
+    $("#week8Content").toggleClass("w3-show");
+    $("#week8Btn").toggleClass("accent"); 
+  });
+  $("#week9Btn").click(function() {
+    $("#week9Content").toggleClass("w3-show");
+    $("#week9Btn").toggleClass("accent"); 
+  });
 });
