@@ -37,7 +37,11 @@ $(document).ready(function() {
     $("#week7Content").toggleClass("w3-show");
     $("#week7Btn").toggleClass("accent"); 
   });
+<<<<<<< HEAD
     $("#week8Btn").click(function() {
+=======
+  $("#week8Btn").click(function() {
+>>>>>>> b09eb04 (Adding week 8 and 9)
     $("#week8Content").toggleClass("w3-show");
     $("#week8Btn").toggleClass("accent"); 
   });
