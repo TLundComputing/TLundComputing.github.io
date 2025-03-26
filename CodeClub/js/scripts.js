@@ -46,8 +46,7 @@ $(document).ready(function() {
     $("#week9Btn").toggleClass("accent"); 
   });
   $("#week10Btn").click(function() {
-	  alert("No peeking yet...");
-    //$("#week10Content").toggleClass("w3-show");
-    //$("#week10Btn").toggleClass("accent"); 
+    $("#week10Content").toggleClass("w3-show");
+    $("#week10Btn").toggleClass("accent"); 
   });
 });
