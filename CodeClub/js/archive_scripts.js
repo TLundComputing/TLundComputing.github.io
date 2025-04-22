@@ -13,7 +13,6 @@ $(document).ready(function() {
     $("#week1Content").toggleClass("w3-show");
     $("#week1Btn").toggleClass("accent");
   });
-  /*
   $("#week2Btn").click(function() {
     $("#week2Content").toggleClass("w3-show");
     $("#week2Btn").toggleClass("accent");
@@ -50,9 +49,10 @@ $(document).ready(function() {
     $("#week10Content").toggleClass("w3-show");
     $("#week10Btn").toggleClass("accent"); 
   });
-  */
-  
   $(".modal-close").click(function(){
 	  $(".w3-modal").hide();
+  });
+  $("#spring25Btn").click(function(){
+	$("#spring25").show();
   });
 });
