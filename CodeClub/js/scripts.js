@@ -21,11 +21,11 @@ $(document).ready(function() {
     $("#week3Content").toggleClass("w3-show");
     $("#week3Btn").toggleClass("accent");
   });
-  /*
   $("#week4Btn").click(function() {
     $("#week4Content").toggleClass("w3-show");
     $("#week4Btn").toggleClass("accent");
   });
+  /*
   $("#week5Btn").click(function() {
     $("#week5Content").toggleClass("w3-show");
     $("#week5Btn").toggleClass("accent");
