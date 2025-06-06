@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Web</title>
+    <title>That's My Jam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -12,19 +12,22 @@
     <header class="w3-container primary">
       <h1 class="w3-center">That's My Jam!</h1>
     </header>
-    <section class="w3-container">
+    <section class="w3-container" style="margin-top:20px;">
       <!-- Navigation Bar for tabs -->
-      <div class="w3-bar">
-        <button class="w3-bar-item w3-button secondary tab-btn">What You Will Make</button>
-        <button class="w3-bar-item w3-button tab-btn">Adding Sprites</button>
-        <button class="w3-bar-item w3-button tab-btn">Moving the Player</button>
-        <button class="w3-bar-item w3-button tab-btn">Making Jam Fall</button>
-        <button class="w3-bar-item w3-button tab-btn">Add Randomness</button>
-        <button class="w3-bar-item w3-button tab-btn">Challenges</button>
+      <div class="w3-bar secondary">
+        <button class="w3-bar-item w3-button accent tab-btn">What You Will Make</button>
+        <button class="w3-bar-item w3-button secondary tab-btn">Adding Sprites</button>
+        <button class="w3-bar-item w3-button secondary tab-btn">Moving the Player</button>
+        <button class="w3-bar-item w3-button secondary tab-btn">Making Jam Fall</button>
+        <button class="w3-bar-item w3-button secondary tab-btn">Add Randomness</button>
+        <button class="w3-bar-item w3-button secondary tab-btn">Challenges</button>
       </div>
       <!-- Sectional Work -->
       <div id="1" class="step" style="display:block">
         <h2>What you will make</h2>
+        <p>You will make a game that allows a hedgehog to catch jam and honey jars. Use the arrow keys and have a go at the game now.</p>
+        <p class="w3-center"><iframe src="https://scratch.mit.edu/projects/1184700565/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></p>
+        <p>Go to the next tab to see the next step</p>
       </div>
       <div id="2" class="step" style="display:none">
         <h2>Adding Sprites</h2>
@@ -47,7 +50,10 @@
     </footer>
     <script>
       $(document).ready(function(){
-        console.log("Ready!");
+        $(".tab-btn").click(function(){
+          $(".step").css("display", "none");
+          $(this).css("display", "block");
+        });
       });
     </script>
   </body>
