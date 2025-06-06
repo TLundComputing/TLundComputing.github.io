@@ -15,12 +15,12 @@
     <section class="w3-container" style="margin-top:20px;">
       <!-- Navigation Bar for tabs -->
       <div class="w3-bar secondary">
-        <button class="w3-bar-item w3-button accent tab-btn">What You Will Make</button>
-        <button class="w3-bar-item w3-button secondary tab-btn">Adding Sprites</button>
-        <button class="w3-bar-item w3-button secondary tab-btn">Moving the Player</button>
-        <button class="w3-bar-item w3-button secondary tab-btn">Making Jam Fall</button>
-        <button class="w3-bar-item w3-button secondary tab-btn">Add Randomness</button>
-        <button class="w3-bar-item w3-button secondary tab-btn">Challenges</button>
+        <button class="w3-bar-item w3-button accent tab-btn" data-content="1">What You Will Make</button>
+        <button class="w3-bar-item w3-button secondary tab-btn" data-content="2">Adding Sprites</button>
+        <button class="w3-bar-item w3-button secondary tab-btn" data-content="3">Moving the Player</button>
+        <button class="w3-bar-item w3-button secondary tab-btn" data-content="4">Making Jam Fall</button>
+        <button class="w3-bar-item w3-button secondary tab-btn" data-content="5">Add Randomness</button>
+        <button class="w3-bar-item w3-button secondary tab-btn" data-content="6">Challenges</button>
       </div>
       <!-- Sectional Work -->
       <div id="1" class="step" style="display:block">
@@ -49,10 +49,9 @@
     </footer>
     <script>
       $(document).ready(function(){
-        $(".tab-btn").click(function(){
-          let me = $(this);
+        $("button.tab-btn").click(function(){
           $(".step").css("display", "none");
-          me.css("display", "block");
+          $("#"+$(this).attr("data-content")).css("display","block");
         });
       });
     </script>
