@@ -25,9 +25,8 @@
       <!-- Sectional Work -->
       <div id="1" class="step" style="display:block">
         <h2>What you will make</h2>
-        <p>You will make a game that allows a hedgehog to catch jam and honey jars. Use the arrow keys and have a go at the game now.</p>
+        <p>You will make a game that allows a hedgehog to catch jam and honey jars. Use the arrow keys and have a go at the game now. Go to the next tab to see the next step.</p>
         <p class="w3-center"><iframe src="https://scratch.mit.edu/projects/1184700565/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></p>
-        <p>Go to the next tab to see the next step</p>
       </div>
       <div id="2" class="step" style="display:none">
         <h2>Adding Sprites</h2>
@@ -51,8 +50,9 @@
     <script>
       $(document).ready(function(){
         $(".tab-btn").click(function(){
+          let me = $(this);
           $(".step").css("display", "none");
-          $(this).css("display", "block");
+          me.css("display", "block");
         });
       });
     </script>
