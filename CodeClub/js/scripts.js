@@ -41,16 +41,10 @@ $(document).ready(function() {
     $("#week8Content").toggleClass("w3-show");
     $("#week8Btn").toggleClass("accent"); 
   });
-  /*
   $("#week9Btn").click(function() {
     $("#week9Content").toggleClass("w3-show");
     $("#week9Btn").toggleClass("accent"); 
   });
-  $("#week10Btn").click(function() {
-    $("#week10Content").toggleClass("w3-show");
-    $("#week10Btn").toggleClass("accent"); 
-  });
-  */
   
   $(".modal-close").click(function(){
 	  $(".w3-modal").hide();
