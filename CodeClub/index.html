@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CodeClub @ Bootham</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/codeclub.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <header class="w3-container primary">
-      <h1 id="mainTitle" class="w3-center">Code Club @ Bootham</h1>
-      <select id="stylePicker" class="w3-select">
-        <option value="cc">Code Club</option>
-        <option value="cd">CoderDojo</option>
-      </select>
-      <div class="w3-bar">
-		<a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-		<a href="archive.html" class="w3-bar-item w3-button w3-mobile">Archive</a>
+
+<head>
+  <title>CodeClub @ Bootham</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/codeclub.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="w3-container primary">
+    <h1 id="mainTitle" class="w3-center">Code Club @ Bootham</h1>
+    <select id="stylePicker" class="w3-select">
+      <option value="cc">Code Club</option>
+      <option value="cd">CoderDojo</option>
+    </select>
+    <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+      <a href="archive.html" class="w3-bar-item w3-button w3-mobile">Archive</a>
+    </div>
+  </header>
+  <section class="w3-container">
+    <div class="w3-row-padding">
+      <div class="w3-col l12">
+        <h2>Activities</h2>
+        <p>Code Club is a relaxed environment where you can learn new skills and make something you are proud of. Each
+          week you can either:</p>
+        <ol class="w3-ol">
+          <li>Use the pathways from the Raspberry Pi Foundation to learn something new</li>
+          <li>Use the accordian to see some themed activities and challenges</li>
+          <li>Create something brand new to your own specification</li>
+        </ol>
       </div>
-    </header>
-    <section class="w3-container">
-	  <!-- Sleeping Banner START
+    </div>
+  </section>
+  <section id="parents-day" class="w3-container">
+    <div class="w3-row-padding">
+      <div class="w3-col l12">
+        <h2>Parents &amp; Guardians Day</h2>
+        <p>Welcome to Code Club @ Bootham we have a range of activities for you to do and try!</p>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col l3">
+        <h4 class="w3-center">Scratch</h4>
+        <p>Use Scratch to make a game, animation, or story of your choice. Remember to use sprites to help you on your way. Use the blank project to make your ideas come to life. If you need some help try the space talk activity</p>
+        <p class="w3-center"><a href="https://scratch.mit.edu/projects/editor" class="w3-button secondary" target="_blank">Blank Scratch</a></p>
+        <p class="w3-center"><a href="https://projects.raspberrypi.org/en/projects/space-talk" class="w3-button secondary" target="_blank">Space Talk</a></p>
+      </div>
+      <div class="w3-col l3">
+        <h4 class="w3-center">Python</h4>
+        <p>Tom the turtle is trying his best to draw more art than the hosue he has created. Have a look at what Tom can do and then chnage the hosue to make your own artistic drawing!</p>
+        <p class="w3-center"><a href="https://trinket.io/embed/python/8f42ebed78?showInstructions=true" class="w3-button secondary" target="_blank">Tom the Turtle</a></p>
+      </div>
+      <div class="w3-col l3">
+        <h4 class="w3-center">Web Design</h4>
+        <p>Try and create a web page using HTML and CSS to create a website baout how to save the environment!</p>
+        <p class="w3-center"><a href="https://trinket.io/embed/html/0f29d3ee79c3?showInstructions=true" class="w3-button secondary" target="_blank">Save the Environment</a></p>
+      </div>
+      <div class="w3-col l3">
+        <h4 class="w3-center">micro:bit</h4>
+        <p>Use the BBC micro:bit to create a biscuit tin alarm system. We all love biscuits but hate it when someone steals the last one! Now it can be safe with your alarm system.</p>
+        <p class="w3-center"><a href="https://makecode.microbit.org/" class="w3-button secondary" target="_blank">Blank micro:bit Project</a></p>
+        <p class="w3-center"><a href="https://microbit.org/projects/make-it-code-it/cookie-tin-alarm/" class="w3-button secondary" target="_blank">Instructions</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="w3-container" style="padding-bottom: 100px !important;">
+    <!-- Sleeping Banner START
 	  <div class="w3-row-padding">
         <div class="w3-col l12">
           <h2 class="w3-center">Code Club @ Bootham is currently taking a break</h2>
@@ -32,208 +80,82 @@
 		</div>
       </div>
       END -->
-      <div class="w3-row-padding">
-        <div class="w3-col l12">
-          <h2>Activities</h2>
-          <p>Code Club is a relaxed environment where you can learn new skills and make something you are proud of. Each week you can either:</p>
-          <ol class="w3-ol">
-            <li>Use the pathways from the Raspberry Pi Foundation to learn something new</li>
-            <li>Use the accordian to see some themed activities and challenges</li>
-            <li>Create something brand new to your own specification</li>
-          </ol>
+    <div class="w3-row-padding">
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With Scratch</h3>
+          <img style="max-width: 33%;" src="./img/scratch.png" alt="Scratch Logo"
+            title="designed by FreePik from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/scratch" target="_blank">Go to
+            Scratch Pathway</a>
         </div>
       </div>
-      <div class="w3-row-padding">
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With Scratch</h3>
-            <img style="max-width: 33%;" src="./img/scratch.png" alt="Scratch Logo" title="designed by FreePik from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/scratch" target="_blank">Go to Scratch Pathway</a>
-          </div>
-        </div>
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With Python</h3>
-            <img style="max-width: 33%;" src="./img/python.png" alt="Python Logo" title="designed by FreePik from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/python" target="_blank">Go to Python Pathway</a>
-          </div>
-        </div>
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With Web Design</h3>
-            <img style="max-width: 33%;" src="./img/html-5.png" alt="HTML Logo" title="designed by FreePik from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/html_and_css" target="_blank">Go to Web Design Pathway</a>
-          </div>
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With Python</h3>
+          <img style="max-width: 33%;" src="./img/python.png" alt="Python Logo"
+            title="designed by FreePik from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/python" target="_blank">Go to
+            Python Pathway</a>
         </div>
       </div>
-      <div class="w3-row-padding">
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With micro:bit</h3>
-            <img style="max-width: 33%;" src="./img/pcb-board.png" alt="Scratch Logo" title="designed by madness from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/microbit" target="_blank">Go to micro:bit Pathway</a>
-          </div>
-        </div>
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With Pico</h3>
-            <img style="max-width: 33%;" src="./img/raspberry-pi.png" alt="Raspberry Pi Logo" title="designed by madness from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/pathways/pico-intro" target="_blank">Go to Physical Computing Pathway</a>
-          </div>
-        </div>
-        <div class="w3-col l4">
-          <div class="w3-panel w3-center secondary">
-            <h3>Getting Started With AI</h3>
-            <img style="max-width: 33%;" src="./img/artificial-intelligence.png" alt="Scratch Logo" title="designed by FreePik from Flaticon"><br><br>
-            <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/artificial_intelligence" target="_blank">Go to AI Pathway</a>
-          </div>
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With Web Design</h3>
+          <img style="max-width: 33%;" src="./img/html-5.png" alt="HTML Logo"
+            title="designed by FreePik from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/html_and_css"
+            target="_blank">Go to Web Design Pathway</a>
         </div>
       </div>
-      <!-- ACCORDIAN -->
-      <button id="week1Btn" class="w3-btn w3-block w3-left-align secondary">Week 1</button>
-      <div id="week1Content" class="w3-container w3-hide accord-content">
-	<h4>Code Club Unplugged?</h4>
-	<p>How strange... a Code Club without any computers?!</p>
-	<p>The Raspberry Pi Foundation and Code Club have created some new unplugged activities and we are one of the first people in the world to have a go at them.<br>Activities include</p>
-	<ul class="w3-ul">
-	  <li>Binary Number Logic</li>
-	  <li>Scratch Match</li>
-	  <li>Scratch to Python</li>
-	  <li>Logic Puzzles</li>
-	</ul>
-	<p>Have a go and tell me what you think! There are more to come!</p>
-      </div>
-      <button id="week2Btn" class="w3-btn w3-block w3-left-align secondary">Week 2</button>
-      <div id="week2Content" class="w3-container w3-hide accord-content">
-        <h4>BBC micro:bit mode ACTIVATE!</h4>
-        <div class="w3-row-padding">
-          <div class="w3-col l6 m6">
-            <h4 class="w3-center">Hotter and Colder!</h4>
-            <p>Use this tutorial to help you create a hotter and colder game we can then go and test this outside!</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://microbit.org/projects/make-it-code-it/hot-and-cold-game/" target="_blank">Hotter and Colder Instructions</a></p>
-          </div>
-          <div class="w3-col l6 m6">
-            <h4 class="w3-center">Environment Sensor</h4>
-            <p>Ask Tom for the classroom code to create your own environmental sensor. We can then use the micro:bit to find out environmental data from outside</p>
-          </div>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With micro:bit</h3>
+          <img style="max-width: 33%;" src="./img/pcb-board.png" alt="Scratch Logo"
+            title="designed by madness from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/microbit" target="_blank">Go to
+            micro:bit Pathway</a>
         </div>
       </div>
-      <button id="week3Btn" class="w3-btn w3-block w3-left-align secondary">Week 3</button>
-	<div id="week3Content" class="w3-container w3-hide accord-content">
-        <h4>BBC micro:bit minigames</h4>
-        <div class="w3-row-padding">
-          <div class="w3-col l6 m6">
-            <h4 class="w3-center">Dance Detector</h4>
-            <p>Use this tutorial to create a dance detecting machine! Think abut how you could turn this into a replica of Just Dance</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/dance-detector" target="_blank">Dance Detector Instructions</a></p>
-          </div>
-          <div class="w3-col l6 m6">
-            <h4 class="w3-center">Party Games!</h4>
-            <p>Design and Invent your own party game using the BBC micro:bit, Use the link below to help you plan and get started.</p>
-	    <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/party-game" target="_blank">Party Games Instructions</a></p>
-          </div>
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With Pico</h3>
+          <img style="max-width: 33%;" src="./img/raspberry-pi.png" alt="Raspberry Pi Logo"
+            title="designed by madness from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/pathways/pico-intro" target="_blank">Go to
+            Physical Computing Pathway</a>
         </div>
       </div>
-      <button id="week4Btn" class="w3-btn w3-block w3-left-align secondary">Week 4</button>
-      <div id="week4Content" class="w3-container w3-hide accord-content">
-        <h4>The Week Scratch Was Banned</h4>
-        <p>It is time for us to try something new instead of using Scratch! Have a go at these projects or try something yourself</p>
-        <div class="w3-row-padding">
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">BBC micro:bit</h4>
-            <p>Use the MakeCode Editor to create a Walkie-Talkie with a friend so that you can send messages to each other using the Radio blocks. Use the tutorial on MakeCode to help or try it yourself!</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://makecode.microbit.org/" target="_blank">MakeCode Editor</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Raspberry Pi Pico</h4>
-            <p>Use Thonny and the Raspberry Pi Pico to create a working set of traffic lights. I have written a tutorial for this and you can use the link below to get you there!</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://selbycoderdojo.org.uk/downloads/sessionresources/2024/2024-Aug-Tom-Pico-Traffic-Lights.pdf" target="_blank">Traffic Light Instructions</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Python</h4>
-            <p>For people who want a challenge, we can create our very own version of Mario Party called Super Code Club Party. Use the link below to take you to the instructions and starter code. The starter code will say "Super CoderDojo Party" however that is because I am using it at my CoderDojo in Selby. You can change it to have the right title.</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://trinket.io/embed/python/5776735ea05f?showInstructions=true" target="_blank">Super Code club Party</a></p>
-          </div>
+      <div class="w3-col l4">
+        <div class="w3-panel w3-center secondary">
+          <h3>Getting Started With AI</h3>
+          <img style="max-width: 33%;" src="./img/artificial-intelligence.png" alt="Scratch Logo"
+            title="designed by FreePik from Flaticon"><br><br>
+          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/artificial_intelligence"
+            target="_blank">Go to AI Pathway</a>
         </div>
       </div>
-      <button id="week5Btn" class="w3-btn w3-block w3-left-align secondary">Week 5</button>
-      <div id="week5Content" class="w3-container w3-hide accord-content">
-        <h4>Gamer Hackathon</h4>
-        <p>It is time for us to make a game! It can be about anything, if you want to get started use one of the projects below</p>
-        <div class="w3-row-padding">
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">BBC micro:bit</h4>
-            <p>Use the micro:bit to create flappy bird, or crahy bird as they call it!</p>
-			<p class="w3-center"><a class="w3-btn secondary" href="https://makecode.microbit.org/projects/crashy-bird" target="_blank">Instructions</a></p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://makecode.microbit.org/" target="_blank">MakeCode Editor</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Raspberry Pi Pico</h4>
-            <p>Use Thonny and the Raspberry Pi Pico to create a reaction timing game. Ask tom for the micropython book</p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Defold</h4>
-            <p>For people who want a challenge, Tom is creating a version of space invaders. What game do you think you could make? Ask Tom for the tutorials for Defold.</p>
-          </div>
-        </div>
-      </div>
-      <button id="week6Btn" class="w3-btn w3-block w3-left-align secondary">Week 6</button>
-      <div id="week6Content" class="w3-container w3-hide accord-content">
-        <h4>The future is now thanks to science!</h4>
-        <p>It is time to celebrate science and everything geeky! If you want to get started use one of the projects below</p>
-        <div class="w3-row-padding">
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">BBC micro:bit</h4>
-            <p>Use the micro:bit to create a sensor object for an astronaught. Use the radio and datalogger to send x, y, and z values to another micro:bit to track a rocket launch.</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://makecode.microbit.org/" target="_blank">MakeCode Editor</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Raspberry Pi Pico</h4>
-            <p>Use Thonny and the Raspberry Pi Pico to create a futuristic invention. It could be a game or sequence that uses LEDs and Buttons</p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Scratch</h4>
-            <p>Angry Birds is making a comeback. Try and create a close of angry birds with different stages. Use the display outside the maths classrooms for the different formulae to use.</p>
-	    <p class="w3-center"><a class="w3-btn secondary" href="https://scratch.mit.edu/projects/editor/" target="_blank">Scratch Editor</a></p>
-          </div>
-        </div>
-      </div>
-      <button id="week7Btn" class="w3-btn w3-block w3-left-align secondary">Week 7</button>
-      <div id="week7Content" class="w3-container w3-hide accord-content">
-        <h4>Python Bytes</h4>
-        <p>The Raspberry Pi Foundation have asked you to take on the challenge of trying their new python resources. Click the button and give it a go.</p>
-        <a class="w3-btn secondary" href="https://booth.am/python" target="_target">Python Bytes Challenges</a>
-      </div>
-      <button id="week8Btn" class="w3-btn w3-block w3-left-align secondary">Week 8</button>
-      <div id="week8Content" class="w3-container w3-hide accord-content">
-        <h4>All about the weather!</h4>
-        <p>Crazy to think it is a full heatwave at the moment! Try cooling off with these weather styled projects.</p>
-        <div class="w3-row-padding">
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Scratch</h4>
-            <p>Use this to tuorial to make a snowball fight game.</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/snowball-fight" target="_blank">Instructions</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">Python</h4>
-            <p>Use Python to get a view of the world from space. Then using different web services plot where the ISS (International space station) is and show who is on it.</p>
-            <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/where-is-the-space-station" target="_blank">Instructions</a></p>
-          </div>
-          <div class="w3-col l4 m4">
-            <h4 class="w3-center">HTML/CSS</h4>
-            <p>Take a load off and watch a sunrise and sunset. Use HTML/CSS to create an animation of the sun rising and setting.</p>
-	          <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/sunrise" target="_blank">Instructions</a></p>
-          </div>
-        </div>
-      </div>
-      <button id="week9Btn" class="w3-btn w3-block w3-left-align secondary">Week 9</button>
-      <div id="week9Content" class="w3-container w3-hide accord-content">
-	      <h4>Final week, do what you like!</h4>
-      </div>
-    </section>
-    <footer class="w3-container w3-center w3-bottom primary">
-      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://tlundcomputing.github.io/codeclub">Coding Activities</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://tlundcomputing.github.io/">TLundComputing</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
-    </footer>
-    <script src="./js/scripts.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer class="w3-container w3-center w3-bottom primary">
+    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+        rel="cc:attributionURL" href="https://tlundcomputing.github.io/codeclub">Coding Activities</a> by <a
+        rel="cc:attributionURL dct:creator" property="cc:attributionName"
+        href="https://tlundcomputing.github.io/">TLundComputing</a> is licensed under <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+  </footer>
+  <script src="./js/scripts.js"></script>
+</body>
+
 </html>
