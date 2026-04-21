@@ -21,9 +21,12 @@ $(document).ready(function () {
   $("#winter25Btn").click(function() {
     $("#winter25").show();
   });
+  $("#spring26Btn").click(function() {
+    $("#spring26").show();
+  });
   $("button").click(function(){
     let id = $(this).attr('id');
-    if(id.localeCompare("summer25Btn") != 0 && id.localeCompare("spring25Btn") != 0 && id.localeCompare("winter25Btn")) {
+    if(id.localeCompare("summer25Btn") != 0 && id.localeCompare("spring25Btn") != 0 && id.localeCompare("winter25Btn") != 0 && id.localeCompare("spring26Btn")) {
       $("#" + id.slice(0,id.length - 3) + "Content").toggleClass("w3-show");
       $("#" + id).toggleClass("accent");
     }
