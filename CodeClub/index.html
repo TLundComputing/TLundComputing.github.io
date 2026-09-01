@@ -1,237 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>CodeClub @ Bootham</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/codeclub.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-
-<body>
-  <header class="w3-container primary">
-    <h1 id="mainTitle" class="w3-center">Code Club @ Bootham</h1>
-    <select id="stylePicker" class="w3-select">
-      <option value="cc">Code Club</option>
-      <option value="cd">CoderDojo</option>
-    </select>
-    <div class="w3-bar">
-      <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-      <a href="archive.html" class="w3-bar-item w3-button w3-mobile">Archive</a>
-    </div>
-  </header>
-  <!-- PARENTS DAY START -->
-  <section id="parents-day" class="w3-container">
-    <div class="w3-panel accent">
-      <div class="w3-row-padding">
-        <div class="w3-col l12">
-          <h2>Parents &amp; Guardians Day</h2>
-          <p>Welcome to Code Club @ Bootham we have a range of activities for you to do and try!</p>
-        </div>
-      </div>
-      <div class="w3-row-padding">
-        <div class="w3-col l4">
-          <h4 class="w3-center">Scratch</h4>
-          <p>Use Scratch to make a football kit maker.</p>
-          <p class="w3-center"><a href="https://scratch.mit.edu/projects/editor" class="w3-button secondary"
-              target="_blank">Blank Scratch</a></p>
-          <p class="w3-center"><a href="https://projects.raspberrypi.org/en/projects/kit-chooser"
-              class="w3-button secondary" target="_blank">Kit Chooser Instructions</a></p>
-        </div>
-        <div class="w3-col l4">
-          <h4 class="w3-center">Python</h4>
-          <p>Create the perfect football teams using this team chooser!</p>
-          <p class="w3-center"><a href="https://projects.raspberrypi.org/en/projects/editor-team-chooser/landing"
-              class="w3-button secondary" target="_blank">Team Chooser</a></p>
-        </div>
-        <div class="w3-col l4">
-          <h4 class="w3-center">micro:bit</h4>
-          <p>Use the BBC micro:bit to create a a World Cup Match predictor.</p>
-          <p class="w3-center"><a href="https://makecode.microbit.org/" class="w3-button secondary"
-              target="_blank">Blank micro:bit Project</a></p>
-          <p class="w3-center"><a href="https://projects.raspberrypi.org/en/projects/microbit-match-predictor/"
-              class="w3-button secondary" target="_blank">Instructions</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END -->
-  <section class="w3-container">
-    <div class="w3-row-padding">
-      <div class="w3-col l12">
-        <h2>Activities</h2>
-        <p>Code Club is a relaxed environment where you can learn new skills and make something you are proud of. Each
-          week you can either:</p>
-        <ol class="w3-ol">
-          <li>Use the pathways from the Raspberry Pi Foundation to learn something new</li>
-          <li>Use the accordian to see some themed activities and challenges</li>
-          <li>Create something brand new to your own specification</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-  <section class="w3-container">
-	  <!--Sleeping Banner START
-    <div class="w3-row-padding">
-        <div class="w3-col l12">
-          <h2 class="w3-center">Code Club @ Bootham is currently taking a break</h2>
-          <p class="w3-center">You will see us soon I promise, use the archive for past activities or use the pathways below to keep learning!</p>
-          <div class="w3-center">
-            <img src="./img/CodeClubSleep.png" style="max-width:50%" alt="Code Club is Sleeping">
-          </div>
-        </div>
-    </div>
-    END -->
-    <div class="w3-row-padding">
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With Scratch</h3>
-          <img style="max-width: 33%;" src="./img/scratch.png" alt="Scratch Logo"
-            title="designed by FreePik from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/scratch" target="_blank">Go to
-            Scratch Pathway</a>
-        </div>
-      </div>
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With Python</h3>
-          <img style="max-width: 33%;" src="./img/python.png" alt="Python Logo"
-            title="designed by FreePik from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/python" target="_blank">Go to
-            Python Pathway</a>
-        </div>
-      </div>
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With Web Design</h3>
-          <img style="max-width: 33%;" src="./img/html-5.png" alt="HTML Logo"
-            title="designed by FreePik from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/html_and_css"
-            target="_blank">Go to Web Design Pathway</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding">
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With micro:bit</h3>
-          <img style="max-width: 33%;" src="./img/pcb-board.png" alt="Scratch Logo"
-            title="designed by madness from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/microbit" target="_blank">Go to
-            micro:bit Pathway</a>
-        </div>
-      </div>
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With Pico</h3>
-          <img style="max-width: 33%;" src="./img/raspberry-pi.png" alt="Raspberry Pi Logo"
-            title="designed by madness from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/pathways/pico-intro" target="_blank">Go to
-            Physical Computing Pathway</a>
-        </div>
-      </div>
-      <div class="w3-col l4">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting Started With AI</h3>
-          <img style="max-width: 33%;" src="./img/artificial-intelligence.png" alt="Scratch Logo"
-            title="designed by FreePik from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/artificial_intelligence"
-            target="_blank">Go to AI Pathway</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding">
-      <div class="w3-col l12 m12 s12">
-        <div class="w3-panel w3-center secondary">
-          <h3>Getting started with Unity</h3>
-          <img style="max-width: 10%;" src="./img/game-console.png" alt="Unity Logo" title="designed by FreePik from Flaticon"><br><br>
-          <a class="w3-btn accent" href="https://projects.raspberrypi.org/en/collections/unity" target="_blank">Go to Unity Pathway</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ACCORDIAN START
-  <section class="w3-container" style="padding-bottom: 100px !important;">
-    
-    <button id="263week1Btn" class="w3-btn w3-block w3-left-align secondary">Week 1</button>
-    <div id="263week1Content" class="w3-container w3-hide accord-content">
-      <h2>Unplugged</h2>
-      <p>This session we are going to look at some computational thinking. Get into pairs or threes and we will have a competition</p>
-    </div>
-    
-	  <button id="263week2Btn" class="w3-btn w3-block w3-left-align secondary">Week 2</button>
-    <div id="263week2Content" class="w3-container w3-hide accord-content">
-      <h2>Nothing Yet!</h2>
-    </div>
-	  
-    <button id="263week3Btn" class="w3-btn w3-block w3-left-align secondary">Week 3</button>
-    <div id="263week3Content" class="w3-container w3-hide accord-content">
-      <h2>Scratch Platformer!</h2>
-	  <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/patchwork_platformer">Go to Instructions</a></p>
-    </div>
-	  
-	  <button id="263week4Btn" class="w3-btn w3-block w3-left-align secondary">Week 4</button>
-    <div id="263week4Content" class="w3-container w3-hide accord-content">
-      <h2>Minigame Madness</h2>
-	  <div class="w3-row-padding">
-		<div class="w3-col l4 m4">
-		  <h3 class="w3-center">Geometry Dash</h3>
-		  <p>Create your own version of geometry dash in Scratch!</p>
-		  <p class="w3-center"><a class="w3-btn secondary" href="https://www.youtube.com/playlist?list=PLy4zsTUHwGJJnoXPSYlKQ15wedqB39W_E" target="_blank">Go to the tutorial</a></p>
-		</div>
-		<div class="w3-col l4 m4">
-		  <h3 class="w3-center">Escape the Maze!</h3>
-		  <p>Create your own maze game in Python</p>
-		  <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/rpg" target="_blank">Go to the instructions</a></p>
-		</div>
-		<div class="w3-col l4 m4">
-		  <h3 class="w3-center">Quiz Time!</h3>
-		  <p>Create your own quiz using HTML and CSS to create an engaging quiz</p>
-		  <p class="w3-center"><a class="w3-btn secondary" href="https://projects.raspberrypi.org/en/projects/quiz-time" target="_blank">Go to the instructions</a></p>
-		</div>
-	  </div>
-    </div>
-	  
-	  <button id="263week5Btn" class="w3-btn w3-block w3-left-align secondary">Week 5</button>
-	<div id="263week5Content" class="w3-container w3-hide accord-content">
-	  <h2>Nothing Yet!</h2>
-	</div>
-  </section>
-  END -->
-  <footer class="w3-container w3-center w3-bottom primary">
-    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
-        rel="cc:attributionURL" href="https://tlundcomputing.github.io/codeclub">Coding Activities</a> by <a
-        rel="cc:attributionURL dct:creator" property="cc:attributionName"
-        href="https://tlundcomputing.github.io/">TLundComputing</a> is licensed under <a
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
-        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
-          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
-          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
-          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
-          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-          src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
-  </footer>
-  <script src="./js/scripts.js"></script>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeClub @ Bootham School</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header class="hero is-primary">
+            <div class="hero-body has-text-centered">
+                <h1 class="title is-1">Code Club @ Bootham School</h1>
+                <h2 class="subtitle is-3">A place for young people to learn to code in an informal environment</h2>
+            </div>
+        </header>
+        <section class="section has-text-black">
+            <div class="content">
+                <h2 style="color:black;">Activities</h2>
+                <p style="color:black;">Code Club is a relaxed environment where you can learn new skills and make something you are proud of. Each week you can either:</p>
+                <ol>
+                    <li style="color:black;">Use the pathways from the Raspberry Pi Foundation to learn something new</li>
+                    <li style="color:black;">Use the accordian to see some themed activities and challenges</li>
+                    <li style="color:black;">Create something brand new to your own specification</li>
+                </ol>
+            </div>
+        </section>
+        <section class="section">
+            <div class="fixed-grid has-3-cols">
+                <div class="grid has-text-centered">
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With Scratch</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/scratch.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/scratch" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With Python</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/python.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/python" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With Web Design</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/html-5.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/html_and_css" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With micro:bit</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/pcb-board.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/microbit" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With Pico</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/raspberry-pi.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/pathways/pico-intro" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With AI</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/artificial-intelligence.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/artificial_intelligence" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                    <div class="cell is-col-span-3">
+                        <div class="notification is-link">
+                            <h3 class="title is-4">Getting Started With Unity</h3>
+                            <figure class="image is-128x128 is-inline-block"><img src="img/game-console.png" alt="The viral code club"></figure><br><br>
+                            <a href="https://projects.raspberrypi.org/en/collections/unity" class="button is-success" target="_blank">Go to Pathway</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="tabs is-boxed is-medium is-centered">
+                <ul id="tabs">
+                    <li id="week1Btn" class="is-active tab"><a>Week 1</a></li>
+                    <li id="week2Btn" class="tab"><a>Week 2</a></li>
+                    <li id="week3Btn" class="tab"><a>Week 3</a></li>
+                    <li id="week4Btn" class="tab"><a>Week 4</a></li>
+                    <li id="week5Btn" class="tab"><a>Week 5</a></li>
+                    <li id="week6Btn" class="tab"><a>Week 6</a></li>
+                    <li id="week7Btn" class="tab"><a>Week 7</a></li>
+                    <li id="week8Btn" class="tab"><a>Week 8</a></li>
+                </ul>
+            </div>
+            <div class="tab-content has-text-black" id="week1Content" style="display:block">
+                <h3 class="title">Coding in Space</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell">
+                        <h4 class="title is-4">Scratch</h4>
+                        <p>Create an Astronaut Reaction Time Game in Scratch</p><br>
+                        <a href="https://projects.raspberrypi.org/en/projects/astronaut-reaction-times" target="_blank" class="button is-success">Go to Project</a>
+                    </div>
+                    <div class="cell">
+                        <h4 class="title is-4">Python</h4>
+                        <p>Take on the Astro Pi Challenge and get your code running in space! (You get a certificate and everything!)</p><br>
+                        <a href="https://projects.raspberrypi.org/en/projects/astro-pi-mission-zero" target="_blank" class="button is-success">Go to Project</a>
+                    </div>
+                    <div class="cell">
+                        <h4 class="title is-4">AI</h4>
+                        <p>Create your own alien language, ask your mentor for a microphone</p><br>
+                        <a href="https://projects.raspberrypi.org/en/projects/alien-language" target="_blank" class="button is-success">Go to Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="week2Content" style="display:none">
+                <h3 class="title">Week 2</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week3Content" style="display:none">
+                <h3 class="title">Week 3</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week4Content" style="display:none">
+                <h3 class="title">Week 4</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week5Content" style="display:none">
+                <h3 class="title">Week 5</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week6Content" style="display:none">
+                <h3 class="title">Week 6</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week7Content" style="display:none">
+                <h3 class="title">Week 7</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="week8Content" style="display:none">
+                <h3 class="title">Week 8</h3>
+                <div class="grid has-text-centered">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer has-background-success has-text-black">
+            <div class="content has-text-centered">
+                <a href="https://tlundcomputing.github.io/CodeClub/">Coding Activities</a> © 2026 by <a href="https://tlundcomputing.github.io/">TLundComputing</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $(".tab").click(function(){
+                    let id = $(this).attr("id");
+                    $("#tabs").children().removeClass("is-active");
+                    $(this).addClass("is-active");
+                    $(".tab-content").css("display","none");
+                    $("#"+id.slice(0,id.length - 3) + "Content").css("display", "block");
+                });
+            });
+        </script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
